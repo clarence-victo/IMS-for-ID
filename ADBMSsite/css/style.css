@@ -1,0 +1,112 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+
+.bg-img {
+  background-image: url('../images/barangay_image.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.container .input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.container input[type=text], .container input[type=number], .container input[type=password] {
+  width: calc(100% - 30px);
+  padding: 15px;
+  border: none;
+  background: #d2d2d2;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+.container input[type=text]:focus, .container input[type=number]:focus, .container input[type=password] {
+  background-color: #ddd;
+  border: 2px solid #04AA6D;
+  outline: none;
+}
+
+.container select {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #d2d2d2;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+.container select:focus {
+  background-color: #ddd;
+  border: 2px solid #04AA6D;
+  outline: none;
+}
+
+.container label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #000000;
+}
+
+.container .input-group input:focus + label,
+.container .input-group input:not(:placeholder-shown) + label {
+  transform: translateY(-40px);
+  font-size: 14px;
+  top: 42px;
+  color: #04AA6D;
+}
+
+.container .input-group select:focus + label,
+.container .input-group select:not(:placeholder-shown) + label {
+  transform: translateY(-40px);
+  font-size: 14px;
+  top: 42px;
+  color: #04AA6D;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: calc(100% - 75%);
+  opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+

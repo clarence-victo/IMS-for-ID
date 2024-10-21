@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+footer {
+    background-color: #333; /* Set your desired background color */
+    color: white; /* Set the text color */
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.box {
+    flex: 0 0 37%;
+    margin: 30px;
+    text-align: justify; /* Add this property for justified content */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box2 {
+    flex: 0 0 37%;
+    margin: 30px;
+    text-align: justify; /* Add this property for justified content */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box3 {
+    flex: 0 0 37%;
+    margin: 30px;
+    text-align: justify; /* Add this property for justified content */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Add border-radius for rounded edges */
+
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box:not(:hover) {
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:not(:hover) img {
+    transform: translateX(0);
+}
+
+.box:hover + .box,
+.box:not(:hover) + .box:hover {
+    transform: translateX(30%); /* Adjust the value for the desired distance */
+    transition-delay: 0.3s;
+}
+
+/***/
+
+.box2:hover {
+    transform: scale(1.1);
+}
+
+.box2:not(:hover) {
+    transition: transform 0.3s ease-in-out;
+}
+
+.box2:not(:hover) img {
+    transform: translateX(0);
+}
+
+.box2:hover + .box2,
+.box2:not(:hover) + .box2:hover {
+    transform: translateX(30%); /* Adjust the value for the desired distance */
+    transition-delay: 0.3s;
+}
+
+/***/
+
+.box3:hover {
+    transform: scale(1.1);
+}
+
+.box3:not(:hover) {
+    transition: transform 0.3s ease-in-out;
+}
+
+.box3:not(:hover) img {
+    transform: translateX(0);
+}
+
+.box3:hover + .box3,
+.box3:not(:hover) + .box3:hover {
+    transform: translateX(30%); /* Adjust the value for the desired distance */
+    transition-delay: 0.3s;
+}
+
+.title_1 {
+    padding-top: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+
+}
